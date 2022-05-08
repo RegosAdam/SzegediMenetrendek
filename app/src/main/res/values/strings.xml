@@ -8,4 +8,48 @@
     <string name="login">Bejelentkezés</string>
     <string name="not_registered_yet">Még nem regisztráltál? Kattints ide</string>
     <string name="password_re">Jelszó újra</string>
+    <string name="anonym_login">Folytatás bejelentkezés nélkül</string>
+    <string name="number">Szám</string>
+    <string name="addToFav">Hozzáadás a Kedvencekhez</string>
+    <string name="logout">Kijelentkezés</string>
+    <string name="view">Nézet</string>
+    <string name="favourites">Kedvencek</string>
+    <string name="search">Keresés</string>
+
+    <string-array name="public_transport_item_numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+        <item>19</item>
+        <item>60</item>
+        <item>67</item>
+        <item>71A</item>
+        <item>72A</item>
+    </string-array>
+
+    <array name="public_transport_item_images">
+        <item>@drawable/n_1</item>
+        <item>@drawable/n_2</item>
+        <item>@drawable/n_5</item>
+        <item>@drawable/n_7</item>
+        <item>@drawable/n_9</item>
+        <item>@drawable/n_19</item>
+        <item>@drawable/n_60</item>
+        <item>@drawable/n_67</item>
+        <item>@drawable/n_71a</item>
+        <item>@drawable/n_71a</item>
+
+    </array>
+    <string name="title_activity_schedule">ScheduleActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="cancel">Vissza</string>
 </resources>

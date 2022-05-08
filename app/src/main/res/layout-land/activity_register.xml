@@ -10,7 +10,7 @@
         android:id="@+id/loginscrn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="20dp"
         android:text="@string/regist"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -47,42 +47,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/password"
-        android:layout_marginStart="100dp" />
+        android:layout_marginTop="-130dp"
+        android:layout_marginStart="400dp" />
+
     <EditText
         android:id="@+id/txtPwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:inputType="textPassword"
-        android:ems="10" />
+        android:layout_marginStart="400dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
     <TextView
         android:id="@+id/fourthTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/password_re"
-        android:layout_marginStart="100dp" />
+        android:layout_marginStart="400dp" />
     <EditText
         android:id="@+id/txtPwdRe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="400dp"
         android:inputType="textPassword"
         android:ems="10" />
+
     <Button
         android:id="@+id/btnLogin"
-        android:onClick="register"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:onClick="register"
         android:text="@string/regist" />
+
     <TextView
         android:id="@+id/lnkLogin"
-        android:onClick="cancel"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/already_registered"
+        android:layout_height="125dp"
+        android:layout_marginTop="-50dp"
         android:gravity="center"
-        android:textSize="20sp"
-        android:textColor="#3F51B5"/>
+        android:onClick="cancel"
+        android:text="@string/already_registered"
+        android:textColor="#3F51B5"
+        android:textSize="20sp" />
 </LinearLayout>

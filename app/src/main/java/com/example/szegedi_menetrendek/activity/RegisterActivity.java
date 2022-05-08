@@ -1,31 +1,36 @@
-package com.example.szegedi_menetrendek;
+package com.example.szegedi_menetrendek.activity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import com.example.szegedi_menetrendek.R;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class RegisterActivity extends AppCompatActivity {
     private static final String LOG_TAG = RegisterActivity.class.getName();
-    private static final int SECRET_KEY = 99;
 
     EditText userNameEditText;
     EditText userEmailEditText;
     EditText passwordEditText;
     EditText passwordConfirmEditText;
 
+    private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        // Bundle bundle = getIntent().getExtras();
-        // int secret_key = bundle.getInt("SECRET_KEY");
         int secret_key = getIntent().getIntExtra("SECRET_KEY", 0);
 
         if (secret_key != 99) {
@@ -36,6 +41,8 @@ public class RegisterActivity extends AppCompatActivity {
         userEmailEditText = findViewById(R.id.txtEmail);
         passwordEditText = findViewById(R.id.txtPwd);
         passwordConfirmEditText = findViewById(R.id.txtPwdRe);
+
+        firebaseAuth = FirebaseAuth.getInstance();
 
         Log.i(LOG_TAG, "onCreate");
     }
@@ -52,18 +59,31 @@ public class RegisterActivity extends AppCompatActivity {
         }
 
         Log.i(LOG_TAG, "Regisztrált: " + userName + ", e-mail: " + email);
-        // TODO: A regisztrációs funkcionalitást meg kellene valósítani egyszer.
-        openTransports();
-    }
+        //openTransports();
 
-    private void openTransports(/* userdata */){
-        Intent intent = new Intent(this, PublicTransportActivity.class);
-        intent.putExtra("SECRET_KEY", SECRET_KEY);
-        startActivity(intent);
+        firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
+                    Log.d(LOG_TAG, "User created successfully");
+                    openTransports();
+                }
+                else {
+                    Log.d(LOG_TAG, "User wasn't created successfully");
+                    Toast.makeText(RegisterActivity.this, "User wasn't created successfully: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                }
+            }
+        });
     }
 
     public void cancel(View view) {
         finish();
+    }
+
+    private void openTransports(/* userdata */){
+        Intent intent = new Intent(this, PublicTransportActivity.class);
+//        intent.putExtra("SECRET_KEY", SECRET_KEY);
+        startActivity(intent);
     }
 
     @Override
@@ -100,5 +120,11 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
         Log.i(LOG_TAG, "onRestart");
+    }
+
+    @Override
+    public void finish(){
+        super.finish();
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 }

@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/SzegediMenetrendek/app/src/main/res/layout-land/activity_main.xml" value="0.24559082892416226" />
+        <entry key="..\:/Projects/SzegediMenetrendek/app/src/main/res/layout-land/activity_register.xml" value="0.24559082892416226" />
+        <entry key="..\:/Projects/SzegediMenetrendek/app/src/main/res/layout-land/activity_shedule.xml" value="0.24559082892416226" />
+        <entry key="..\:/Projects/SzegediMenetrendek/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Projects/SzegediMenetrendek/app/src/main/res/layout/activity_public_transport.xml" value="0.24375" />
+        <entry key="..\:/Projects/SzegediMenetrendek/app/src/main/res/layout/activity_register.xml" value="0.40217391304347827" />
+        <entry key="..\:/Projects/SzegediMenetrendek/app/src/main/res/layout/activity_shedule.xml" value="0.40217391304347827" />
+        <entry key="..\:/Projects/SzegediMenetrendek/app/src/main/res/layout/fragment_second.xml" value="0.40217391304347827" />
+        <entry key="..\:/Projects/SzegediMenetrendek/app/src/main/res/layout/list_public_transport.xml" value="0.33" />
+        <entry key="..\:/Projects/SzegediMenetrendek/app/src/main/res/menu/public_transport_menu.xml" value="0.25" />
         <entry key="..\:/Users/regos/Desktop/SzegediMenetrendek/app/src/main/res/drawable/ic_launcher_background.xml" value="0.192" />
         <entry key="..\:/Users/regos/Desktop/SzegediMenetrendek/app/src/main/res/layout/activity_register.xml" value="0.358695652173913" />
       </map>

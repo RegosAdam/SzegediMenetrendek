@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="20dp"
         android:text="@string/login"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -21,14 +21,14 @@
         android:id="@+id/fstTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="250dp"
         android:layout_marginTop="20dp"
         android:text="@string/email"/>
     <EditText
         android:id="@+id/txtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="250dp"
         android:inputType="textEmailAddress"
         android:ems="10"/>
     <TextView
@@ -36,12 +36,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/password"
-        android:layout_marginStart="100dp" />
+        android:layout_marginStart="250dp" />
     <EditText
         android:id="@+id/txtPwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="250dp"
         android:inputType="textPassword"
         android:ems="10" />
     <Button
@@ -49,14 +49,14 @@
         android:onClick="login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="150dp"
         android:text="@string/login" />
 
     <TextView
         android:id="@+id/lnkRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:onClick="register"
         android:text="@string/not_registered_yet"
@@ -68,8 +68,8 @@
         android:onClick="loginAsAnonym"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="-85dp"
         android:text="@string/anonym_login"
-        android:layout_gravity="center"
+        android:layout_marginStart="350dp"
         android:gravity="center"/>
 </LinearLayout>
