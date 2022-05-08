@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "514264577995",
+    "project_id": "szegedimenetrendek",
+    "storage_bucket": "szegedimenetrendek.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514264577995:android:c4a6f6c9405876eb0a284e",
+        "android_client_info": {
+          "package_name": "com.example.szegedi_menetrendek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514264577995-2qljjvr6l06asr1t6rbei48evq5adsds.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.szegedi_menetrendek",
+            "certificate_hash": "ab5fcf0382e85752494e2f79fba646eafecd7b24"
+          }
+        },
+        {
+          "client_id": "514264577995-mehmb27ej26kq9jd64dagfu7s2pfq984.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZPCdeMeN-Mf_QgUBSha0eZ9h7D_5LlnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514264577995-mehmb27ej26kq9jd64dagfu7s2pfq984.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

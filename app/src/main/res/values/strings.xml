@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Szegedi Menetrendek</string>
+    <string name="regist">Regisztráció</string>
+    <string name="full_name">Teljes Név</string>
+    <string name="email">E-mail cím</string>
+    <string name="password">Jelszó</string>
+    <string name="already_registered">Már regiszráltál? Kattints ide</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="not_registered_yet">Még nem regisztráltál? Kattints ide</string>
+    <string name="password_re">Jelszó újra</string>
+</resources>
